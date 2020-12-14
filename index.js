@@ -37,8 +37,8 @@ const questions = [
 	},
 
 	{
-		question: 'What is 2+2 ? ',
-		answer: '4',
+		question: 'What is my favourite toy ? ',
+		answer: 'buzz lightyear',
 	},
 
 	{
