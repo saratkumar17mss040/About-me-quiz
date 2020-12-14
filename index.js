@@ -1,14 +1,13 @@
 const readlineSync = require('readline-sync');
-const scores = require('./scores');
 var score = 0;
 
-const myName = readlineSync.question('What is my name ? ');
-console.log(`Welcome ${myName} !`);
+const myName = readlineSync.question('What is my name ? \n');
+console.log(`Welcome ${myName} !\n`);
 
-const age = readlineSync.question('What is my age ? ');
-console.log(age > 25 ? 'Right' : 'Wrong');
+const age = readlineSync.question('What is my age ? \n');
+console.log(age > 25 ? 'Right \n' : 'Wrong \n');
 
-const city = readlineSync.question('Where is my city located ? ').toLowerCase();
+const city = readlineSync.question('Where is my city located ? \n').toLowerCase();
 
 if (city === 'coimbatore') {
 	score++;
@@ -17,32 +16,32 @@ if (city === 'coimbatore') {
 displayScore();
 
 function displayScore() {
-	console.log(`Your current score is: ${score}`);
+	console.log(`Your current score is: ${score} \n`);
 }
 
 const questions = [
 	{
-		question: 'What is my favourite colour ? ',
+		question: 'What is my favourite colour ? \n',
 		answer: 'green',
 	},
 
 	{
-		question: 'What is my favourite marvel character ? ',
+		question: 'What is my favourite marvel character ? \n',
 		answer: 'captain america',
 	},
 
 	{
-		question: 'What is my favourite morning drink ? ',
+		question: 'What is my favourite morning drink ? \n',
 		answer: 'coffee',
 	},
 
 	{
-		question: 'What is my favourite toy ? ',
+		question: 'What is my favourite toy ? \n',
 		answer: 'buzz lightyear',
 	},
 
 	{
-		question: 'What is my favourite word ? ',
+		question: 'What is my favourite word ? \n',
 		answer: 'hope',
 	},
 ];
@@ -54,12 +53,12 @@ function askQuestions(questions) {
 		const answer = readlineSync.question(questions[i]['question']);
 		if (answer.toLowerCase() === questions[i].answer) {
 			score++;
-			console.log('Correct answer !');
-		} else console.log('Wrong answer !');
+			console.log('Correct answer !\n');
+		} else console.log('Wrong answer !\n');
 	}
 }
 
-scores.push(score);
+
 displayScore();
-console.log(`Your current high score is: ${Math.max(...scores)}`);
-console.log('Do send a screenshot if you have beaten your old high score !');
+
+
