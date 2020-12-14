@@ -17,7 +17,7 @@ if (city === 'coimbatore') {
 displayScore();
 
 function displayScore() {
-	console.log(`My current score is: ${score}`);
+	console.log(`Your current score is: ${score}`);
 }
 
 const questions = [
@@ -61,5 +61,5 @@ function askQuestions(questions) {
 
 scores.push(score);
 displayScore();
-console.log(`My current high score is: ${Math.max(...scores)}`);
+console.log(`Your current high score is: ${Math.max(...scores)}`);
 console.log('Do send a screenshot if you have beaten your old high score !');
