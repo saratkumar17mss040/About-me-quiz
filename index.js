@@ -2,13 +2,13 @@ const readlineSync = require('readline-sync');
 const scores = require('./scores');
 var score = 0;
 
-const myName = readlineSync.question('What is your name ? ');
+const myName = readlineSync.question('What is my name ? ');
 console.log(`Welcome ${myName} !`);
 
-const age = readlineSync.question('What is your age ? ');
+const age = readlineSync.question('What is my age ? ');
 console.log(age > 25 ? 'Right' : 'Wrong');
 
-const city = readlineSync.question('What is your city ? ').toLowerCase();
+const city = readlineSync.question('Where is my city located ? ').toLowerCase();
 
 if (city === 'coimbatore') {
 	score++;
@@ -17,30 +17,22 @@ if (city === 'coimbatore') {
 displayScore();
 
 function displayScore() {
-	console.log(`Your current score is: ${score}`);
-}
-
-const num1 = parseInt(readlineSync.question('Enter number 1: '));
-const num2 = parseInt(readlineSync.question('Enter number 2: '));
-console.log(`Addition of two numbers are: ${add(num1, num2)} `);
-
-function add(num1, num2) {
-	return num1 + num2;
+	console.log(`My current score is: ${score}`);
 }
 
 const questions = [
 	{
-		question: 'What is your favourite colour ? ',
+		question: 'What is my favourite colour ? ',
 		answer: 'green',
 	},
 
 	{
-		question: 'What is your favourite marvel character ? ',
+		question: 'What is my favourite marvel character ? ',
 		answer: 'captain america',
 	},
 
 	{
-		question: 'What is your favourite morning drink ? ',
+		question: 'What is my favourite morning drink ? ',
 		answer: 'coffee',
 	},
 
@@ -50,7 +42,7 @@ const questions = [
 	},
 
 	{
-		question: 'What makes everyone unite together ? ',
+		question: 'What is my favourite word ? ',
 		answer: 'hope',
 	},
 ];
@@ -69,5 +61,5 @@ function askQuestions(questions) {
 
 scores.push(score);
 displayScore();
-console.log(`Your current high score is: ${Math.max(...scores)}`);
+console.log(`My current high score is: ${Math.max(...scores)}`);
 console.log('Do send a screenshot if you have beaten your old high score !');
