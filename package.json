@@ -1,0 +1,30 @@
+{
+  "name": "about-me-quiz",
+  "version": "1.0.0",
+  "description": "A simple about me node js cli quiz !",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saratkumar17mss040/About-me-quiz.git"
+  },
+  "keywords": [
+    "about",
+    "me",
+    "node",
+    "js",
+    "cli",
+    "quiz"
+  ],
+  "author": "sarath",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/saratkumar17mss040/About-me-quiz/issues"
+  },
+  "homepage": "https://github.com/saratkumar17mss040/About-me-quiz#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
